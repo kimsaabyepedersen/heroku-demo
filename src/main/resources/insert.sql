@@ -1,23 +1,24 @@
 --
 -- Sample dataset containing a number of Hotels in various Cities across the world.
 --
--- DROP TABLE IF EXISTS city;
--- create TABLE city(
---   id SERIAL PRIMARY KEY ,
---   country VARCHAR(500),
---   name VARCHAR(500),
---   state VARCHAR(500),
---   map VARCHAR(500)
--- );
---
--- DROP TABLE IF EXISTS hotel;
--- create TABLE hotel(
---   id SERIAL PRIMARY KEY ,
---   city_id  INT,
---   name VARCHAR(500),
---   address VARCHAR(500),
---   zip VARCHAR(500)
--- );
+DROP TABLE IF EXISTS city;
+
+create TABLE city(
+ id SERIAL PRIMARY KEY ,
+ country VARCHAR(500),
+ name VARCHAR(500),
+ state VARCHAR(500),
+ map VARCHAR(500)
+);
+
+DROP TABLE IF EXISTS hotel;
+create TABLE hotel(
+ id SERIAL PRIMARY KEY ,
+ city_id  INT,
+ name VARCHAR(500),
+ address VARCHAR(500),
+ zip VARCHAR(500)
+);
 
 
 --  AUSTRALIA

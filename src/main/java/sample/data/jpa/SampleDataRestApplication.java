@@ -49,18 +49,18 @@ public class SampleDataRestApplication {
     }
 
 
-//    @Bean
-//    public DatabasePopulator databasePopulator(DataSource dataSource) {
-//        ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
-//        populator.setContinueOnError(false);
-//        populator.setIgnoreFailedDrops(true);
-//        populator.addScript(new ClassPathResource("insert.sql"));
-//        try {
-//            populator.populate(dataSource.getConnection());
-//        } catch (SQLException ignored) {
-//            // ignore
-//        }
-//        return populator;
-//
-//    }
+    @Bean
+    public DatabasePopulator databasePopulator(DataSource dataSource) {
+        ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
+        populator.setContinueOnError(false);
+        populator.setIgnoreFailedDrops(true);
+        populator.addScript(new ClassPathResource("insert.sql"));
+        try {
+            populator.populate(dataSource.getConnection());
+        } catch (SQLException ignored) {
+            // ignore
+        }
+        return populator;
+
+    }
 }
