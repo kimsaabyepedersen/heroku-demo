@@ -19,8 +19,8 @@
 --   zip VARCHAR(500)
 -- );
 
--- =================================================================================================
--- AUSTRALIA
+
+--  AUSTRALIA
 
 -- Brisbane
 insert into city(country, name, state, map) values ('Australia', 'Brisbane', 'Queensland', '-27.470933, 153.023502');
@@ -138,3 +138,7 @@ insert into hotel(city_id, name, address, zip) values (20, 'Marriot Downtown', '
 -- Washington
 insert into city(country, name, state, map) values ('USA', 'Washington', 'DC', '38.895112, -77.036366');
 insert into hotel(city_id, name, address, zip) values (21, 'Hotel Rouge', '1315 16th Street NW', '20036');
+
+insert into city(country, name, state, map) values ('Denmark', 'Maribo', 'Lolland', '54.774717, 11.507370');
+insert into hotel(city_id, name, address, zip) values (22, 'Hotel Maribo Søpark', 'Vestergade 29', '4930');
+
