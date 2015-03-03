@@ -1,0 +1,1 @@
+web: java -jar -Dserver.port=$PORT target/spring-boot-sample-data-rest-1.2.2.RELEASE.jar
